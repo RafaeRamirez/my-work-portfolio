@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <!-- Establece la codificación de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Configura la vista para que sea responsive en móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>My Personal portafolio </title>
+    <!-- Enlace a un archivo CSS externo para estilos -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza el archivo CSS -->
+    <!-- Descripción de la página para motores de búsqueda -->
+    <meta  name="Description" content="Personal portafolio of rafael augusto ramirez bolaño  as a   Riwi developer.">
+</head>
+<body class="grid-container">
+    <div class="menu">
+    <!-- Menú de navegación con enlaces ancla a secciones de la misma página -->
+        <nav >
+            <a  href="#aboutme" >About Me</a>
+            <a  href="#proyect" >Proyects</a>
+            <a  href="#contact" >contact</a>
+        </nav>
+        <!-- Título principal del portafolio -->
+        <h1>Rafael augusto ramirez bolaño - riwi Developer </h1>
+    </div>
+    <!-- Sección "About Me" -->
+    <section id="aboutme">
+        <h2>About Me</h2>
+            <!-- Breve introducción -->
+        <p>Hello, my name is Rafael Augusto Ramirez Bolaño </p>
+        <!-- Imagen personal -->
+        <img alt="foto mia"  src="imagenes/IMG-20250416-WA0026.jpeg">
+        <!-- Descripción de intereses profesionales -->
+        <p>I am a junior programmer, I love designing new things, giving solutions to everyday tasks, with the programs I developer..</p>
+
+        <!-- Nota: esta línea sugiere que falta más información -->
+        <p>More datails about you..</p>
+        <!-- Tabla con proyectos -->
+    </section>
+
+    <section id="proyect">
+        <table>
+            <tr>
+                <th>Proyect name  </th>     
+                <th>Technologies </th>
+                <th>link</th>
+            </tr>
+            <tr>
+                <td> gestion de inventario</td>
+                <td>python</td>
+                <!-- Enlace a repositorio GitHub del proyecto -->
+                <td><a href="#Sistema_compra">view project</a></td>
+            </tr>
+        </table>
+
+        <div id="Sistema_compra">
+            <h2>Gestion de inventario</h2>
+            <img src="imagenes/gestion.png" alt="Sistemad de compra.jpg">
+            <a target="_blank" href="https://github.com/24236361123344323e/angular">link</a>
+            <h3>Description</h3>
+            <p>Manage customer inventory, delete, add, update prices and inventory </p>
+        </div>
+
+    </section>
+            <!-- Habilidades tecnicas -->  
+            <h2>Skills</h2>
+            <div class="articulo">
+                <ul>
+                    <li>Adaptability</li>
+                    <li>Responsibility</li> 
+                    <li>Creativity</li>
+                    <li>Problem-solving skills</li>
+                </ul>
+            </div>
+    <!-- Formulario de contacto -->
+    <form action="/send" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">message:</label>
+        <textarea id="message" name="message"  rows="4" required></textarea>
+        <!-- Botón para enviar el formulario -->
+        <input class="boton" type="submit"  value="Send">
+    </form>
+    <!-- Sección de contacto/redes sociales -->
+    <section class="redes"   id="contact" > 
+        <h2>Social networks </h2>
+    <!-- Enlace al perfil de GitHub en una nueva pestaña -->
+        <a  href="https://github.com/24236361123344323e" target="_blank"><img alt="github"  src="imagenes/githubjpg"></a>
+        <a  href="https://www.facebook.com/" target="_blank"><img alt="facebook"  src="imagenes/facebook.png"></a>
+        <a  href="http://wa.me/573008354664" target="_blank"><img alt="whatsapp"  src="imagenes/whatsapp-messenger.png"></a>
+        <a  href="https://www.instagram.com/" target="_blank"><img alt="instagram"  src="imagenes/instagram.jpeg"></a>
+    </section>
+    <footer>
+        <p>Copyright 2025 - My Website</p>
+        <address>
+            Email: <a href="mailto:rafar1129@hotmail.com">rafar1129@hotmail.com</a>
+        </address>
+        <p>
+            <a href="#top">Volver arriba</a>
+        </p>
+    </footer>
+</body>
+</html>
