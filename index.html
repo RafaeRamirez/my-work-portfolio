@@ -1,115 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head >
+  <head>
     <!-- Establece la codificación de caracteres -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="my portafolio" />
     <meta name="keywords" content="css,html" />
-    <meta name="sitedomain" content="https://github.com/RafaeRamirez/my-work-portfolio.git" />
+    <meta
+      name="sitedomain"
+      content="https://github.com/RafaeRamirez/my-work-portfolio.git"
+    />
     <meta name="organization" content="RafaeRamirez" />
     <meta name="author" content="Rafael Augusto Ramírez Bolaño" />
     <meta name="designer" content="Rafael Augusto Ramírez Bolaño" />
-    <meta name="copyright" content="© 2025 Rafael Augusto Ramírez Bolaño. Todos los derechos reservados." />
+    <meta name="copyright" content="© 2025 Rafael Augusto Ramírez Bolaño. Todos los derechos reservados."/>
     <meta name="theme-color" content="#ffffff" />
     <meta name="robots" content="index,follow" />
     <meta name="googlebot" content="index,follow" />
     <meta name="revisit-after" content="15days" />
     <!-- Título de la página que aparece en la pestaña del navegador -->
-    <title>My Personal portafolio </title>
+    <title>My Personal portafolio</title>
     <!-- Enlace a un archivo CSS externo para estilos -->
-    <link rel="stylesheet" href="styles.css"> <!-- Enlaza el archivo CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Enlaza el archivo CSS -->
+    <script
+      src="https://kit.fontawesome.com/cb212a8ced.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Descripción de la página para motores de búsqueda -->
-    <meta  name="Description" content="Personal portafolio of rafael augusto ramirez bolaño  as a   Riwi developer.">
-</head>
-<body class="grid-container">
-    <div class="menu">
-    <!-- Menú de navegación con enlaces ancla a secciones de la misma página -->
-        <nav >
-            <a  href="#aboutme" >About Me</a>
-            <a  href="#proyect" >Proyects</a>
-            <a  href="#contact" >contact</a>
-        </nav>
-        <!-- Título principal del portafolio -->
-        <h1>Rafael augusto ramirez bolaño - riwi Developer </h1>
-    </div>
-    <!-- Sección "About Me" -->
-    <section id="aboutme">
-        <h2>About Me</h2>
-            <!-- Breve introducción -->
-        <p>Hello, my name is Rafael Augusto Ramirez Bolaño </p>
-        <!-- Imagen personal -->
-        <img alt="foto mia"  src="imagenes/IMG-20250416-WA0026.jpeg">
-        <!-- Descripción de intereses profesionales -->
-        <p>I am a junior programmer, I love designing new things, giving solutions to everyday tasks, with the programs I developer..</p>
-
-        <!-- Nota: esta línea sugiere que falta más información -->
-        <p>More datails about you..</p>
-        <!-- Tabla con proyectos -->
-    </section>
-
-    <section id="proyect">
-        <table>
-            <tr>
-                <th>Proyect name  </th>     
-                <th>Technologies </th>
-                <th>link</th>
-            </tr>
-            <tr>
-                <td> gestion de inventario</td>
-                <td>python</td>
-                <!-- Enlace a repositorio GitHub del proyecto -->
-                <td><a href="#Sistema_compra">view project</a></td>
-            </tr>
-        </table>
-
-        <div id="Sistema_compra">
-            <h2>Gestion de inventario</h2>
-            <img src="imagenes/gestion.png" alt="Sistemad de compra.jpg">
-            <a target="_blank" href="https://github.com/24236361123344323e/angular">link</a>
-            <h3>Description</h3>
-            <p>Manage customer inventory, delete, add, update prices and inventory </p>
+    <meta
+      name="Description"
+      content="Personal portafolio of rafael augusto ramirez bolaño  as a   Riwi developer."
+    />
+  </head>
+  <body>
+    <head>
+      <!-- Menú de navegación con enlaces ancla a secciones de la misma página -->
+      <nav id="navbar">
+        <div class="logo">Rafael<span>Ramirez</span></div>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#experiencia">Experience</a></li>
+          <li><a href="#proyectos">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </head>
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-content">
+        <div class="hero-tex">
+        <h1>Rafael Ramirez</h1>
+        <h2>Web Developer junior</h2>
+          <h3>Portfolio Website</h3>
+        <p>
+          Welcome to my personal portfolio! Here you will find information about
+          my projects and skills as a web developer.
+        </p>
+          <div class="social-links">
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
         </div>
+        <a href="#contact" class="btn">Contact me</a>
+        </div>
+        </div>
+        <div class="hero-image">
+          <img src="/imagenes/rafael.jpeg" alt="Rafael Ramirez" />
+        </div>
+      </section>
 
-    </section>
-            <!-- Habilidades tecnicas -->  
-            <h2>Skills</h2>
-            <div class="articulo">
-                <ul>
-                    <li>Adaptability</li>
-                    <li>Responsibility</li> 
-                    <li>Creativity</li>
-                    <li>Problem-solving skills</li>
-                </ul>
+      <section id="experiencia " class="experiencia">
+        <h2 class="section-title">work experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="date">January 2025 - December 2025</span>
+              <h3>Full stack Developer at Riwi Company</h3>
+              <p>
+                I have worked on several projects as a web developer,
+                including,interactive websites and applications. Frontend and
+                back-end Developer at Riwi Company,Contributions to open source
+                projects ,Participation in hackathons and programming events
+              </p>
+              <p>
+                Developed and maintained user interfaces for web applications
+                using HTML, CSS, JavaScript and API and database implementation
+              </p>
+              <p>
+                Collaborated with cross-functional teams to design and implement
+                responsive web applications.
+              </p>
+              <ul class="skills">
+                <li>HTML</li>
+                <li>CSS </li>
+                <li> JavaScript</li>
+                <li>Tailwind css</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>SQL</li>
+                <li>API development</li>
+                <li>Git and GitHub</li>
+                <li>Agile methodologies</li>
+                <li>Problem-solving</li>
+                <li>Team collaboration</li>
+                <li>Python</li>
+              </ul>
             </div>
-    <!-- Formulario de contacto -->
-    <form action="/send" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">message:</label>
-        <textarea id="message" name="message"  rows="4" required></textarea>
-        <!-- Botón para enviar el formulario -->
-        <input class="boton" type="submit"  value="Send">
-    </form>
-    <!-- Sección de contacto/redes sociales -->
-    <section class="redes"   id="contact" > 
-        <h2>Social networks </h2>
-    <!-- Enlace al perfil de GitHub en una nueva pestaña -->
-        <a  href="https://github.com/24236361123344323e" target="_blank"><img alt="github"  src="imagenes/githubjpg"></a>
-        <a  href="https://www.facebook.com/" target="_blank"><img alt="facebook"  src="imagenes/facebook.png"></a>
-        <a  href="http://wa.me/573008354664" target="_blank"><img alt="whatsapp"  src="imagenes/whatsapp-messenger.png"></a>
-        <a  href="https://www.instagram.com/" target="_blank"><img alt="instagram"  src="imagenes/instagram.jpeg"></a>
-    </section>
+          </div>
+        </div>
+      </section>
+
+        <section id="proyectos" class="projects">
+            <h2 class="section-title">My Proyects</h2>
+            <div class="projects-container"> 
+
+                <div class="project-card">
+                <div class="project-image">
+                    <img src="/imagenes/sistema.jpg" alt="One Project" />   
+                </div>
+                <div class="project-info">
+                    <h3>One Project</h3> 
+                    <p>
+                    This project is a web application that allows users to manage their tasks efficiently.</p>
+                    <div class="project-tech">
+                    <span class="tech">HTML</span>
+                    <span class="tech">CSS</span>
+                    <span class="tech">JavaScript</span>
+                    <span class="tech">React</span>
+                    <span class="tech">Node.js</span>
+                    </div>   
+                <div class="project-links">
+                    <a href="#" target="_blank"><i class="fas fa-link"></i>Demo</a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i>Code</a>
+                </div>
+                 </div>
+                  </div>
+                  <div class="project-card">
+                <div class="project-image">
+                    <img src="/imagenes/sistema.jpg" alt="One Project" />   
+                </div>
+                <div class="project-info">
+                    <h3>One Project</h3> 
+                    <p>
+                    This project is a web application that allows users to manage their tasks efficiently.</p>
+                    <div class="project-tech">
+                    <span class="tech">HTML</span>
+                    <span class="tech">CSS</span>
+                    <span class="tech">JavaScript</span>
+                    <span class="tech">React</span>
+                    <span class="tech">Node.js</span>
+                    </div>   
+                <div class="project-links">
+                    <a href="#" target="_blank"><i class="fas fa-link"></i>Demo</a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i>Code</a>
+                </div>
+             </div>
+        </div>
+        </section>
+    </main>
     <footer>
         <p>Copyright 2025 - My Website</p>
+         <div class="social-links">
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
         <address>
-            Email: <a href="mailto:rafar1129@hotmail.com">rafar1129@hotmail.com</a>
+          Email:
+          <a href="mailto:rafar1129@hotmail.com">rafar1129@hotmail.com</a>
         </address>
         <p>
-            <a href="#top">Volver arriba</a>
+          <a href="#top">Volver arriba</a>
         </p>
-    </footer>
-</body>
+      </footer>
+  </body>
 </html>
