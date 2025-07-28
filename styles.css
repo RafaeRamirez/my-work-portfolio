@@ -207,23 +207,26 @@ color: var(--primary-color);
 }
 .hero-image {
   flex: 1;
-  border-radius: 500%;
-  max-width: 1100px;
+  display: flex;
   justify-content: flex-end;
-
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
 }
+
 .hero-image img {
   width: 350px;
   height: 350px;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid var(--primary-color);
-  box-shadow: 0 0 30 rgb(0, 38, 255);
+  box-shadow: 0 0 30px rgb(0, 38, 255); /* Agregado "px" faltante */
   transition: var(--transition);
 }
+
 .hero-image img:hover {
   transform: scale(1.05);
-   box-shadow: 0 0 30 rgb(0, 38, 255);
+  box-shadow: 0 0 40px rgba(0, 38, 255, 0.5); /* Más suavizado */
 }
 
 .timeline {
@@ -302,13 +305,195 @@ color: var(--primary-color);
 }
 
 .skills li  {
+  
   font-size: .8rem;
   padding: .3rem .8rem;
   background-color: var(--dark-bg);
+}
+.skills li:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgb(108, 99, 255, 0.3);
+}
+
+.projects-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 1px solid var(--primary-color);
+}
+.projects-card {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgb(108, 99, 255, 0.3);
+  transition: var(--transition);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.project-img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgb(108, 99, 255, .5);
+}
+
+.project-img {
+  overflow: hidden;
+}
+
+.project-img img{
+  transform: var(--transition);
+  width: 100%;
+}
+
+.projects-card:hover .project-img img {
+  transform: scale(1.05);
+  
+}
+.project-info {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.project-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: .8rem;
+  
+}
+
+.project-info p {
+  color: var(--gray-tex);
+  margin-bottom: 1rem;
+ font-size: .95rem;
+ flex-grow: 1;
+
+}
+.project-tech{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem; 
+  margin-bottom: 1rem;
+}
+.project-tech span {
+  background-color: var(--dark-bg);
+  padding: .2rem  .6rem;
+  font-size: .8rem;
+  border-radius: 20px;
+}
+.project-tech span:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgb(108, 99, 255, 0.3);
+}
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+.project-links a {
+  font-size: .9rem;
+  background-color: var(--dark-bg);
+  border-radius:  .5rem;
+  transition: var(--transition);
+}
+.project-links a:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgb(108, 99, 255, 0.3);
 }
 footer {
   background-color: rgb(10, 10, 10, 0.9);
   color: var(--light-tex);
   padding: 2rem 5%;
 
+}
+
+
+
+/* Tablets (pantallas medianas) */
+/* === RESPONSIVE === */
+
+/* Móviles */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-image img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* Tablets y pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .hero-image img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .nav-links {
+    gap: 2rem;
+  }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1025px) {
+  .hero-content {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+    text-align: left;
+  }
+
+  .hero-text {
+    flex: 1;
+  }
+
+  .hero-image {
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .hero-image img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
 }
